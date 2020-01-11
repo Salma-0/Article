@@ -1,0 +1,25 @@
+export const SET_ALERT = 'SET_ALERT';
+export const REMOVE_ALERT = 'REMOVE_ALERT';
+
+export const CREATE_ARTICLE = 'CREATE_ARTICLE';
+export const UPDATE_ARTICLE = 'UPDATE_ARTICLE';
+export const DELETE_ARTICLE = 'DELETE_ARTICLE';
+export const ARTICLE_ERROR = 'ARTICLE_ERROR';
+export const GET_ARTICLE = 'GET_ARTICLE';
+export const GET_ARTICLES = 'GET_ARTICLES';
+export const GET_ARTICLES_BY_AUTHOR = 'GET_ARTICLES_BY_AUTHOR';
+export const CLEAR_ARTICLE = 'CLEAR_ARTICLE';
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const DELETE_COMMENT = 'DELETE_COMMENT';
+export const LIKE = 'LIKE';
+
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const USER_LOADED = 'USER_LOADED'
+export const LOGOUT = 'LOGOUT';
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL = 'REGISTER_FAIL';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const UPLOAD_AVATAR = 'UPLOAD_AVATAR';
+export const UPLOAD_FAIL = 'UPLOAD_FAIL';
+

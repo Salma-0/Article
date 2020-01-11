@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,800,800i&display=swap');
+
+
+*{
+  font-family: 'Amiri';
+}
+
+
+/*
+ *  Navbar Styles
+ */
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
+.navbar {
+  font-size: 16px;
+}
+
+/*
+ *  Profile Styles
+ */
+
+.round-img {
+  border-radius: 50%;
+}
+
+.profile img{
+	height: 20%;
+}
+
+/*
+ *  Login & Register Forms Styles
+ */
+.form {
+	width: 50%;
+}
+
+/*
+ *  Articles List Styles
+ */
+
+
+.blog-item{
+	padding: 2%;
+
+}
+
+ .blog-item a{
+  color: black;
+}
+
+
+.blog-item a:hover{
+  color: maroon;
+  text-decoration: none;
+}
+
+.blog-item:hover{
+	background-color: #efefef
+}
+
+/*
+ *  Article page Styles
+ */
+
+ .cover-img{
+   width: 100%;
+   max-height: 600px;
+}
+
+.blog p {
+  color: black;
+    font-family: 'Open Sans Condensed';
+}
+
+.section-heading{
+  font-weight: 700;
+}
+
+
+
+.comment-wrapper .panel-body {
+    max-height:650px;
+    overflow:auto;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+
+.comment-wrapper p{
+  font-size: 16px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-upload:hover {
+  color: #eee;
+}
+
+.upload-form {
+  width: 60%;
+}
+
