@@ -44,7 +44,7 @@ const Navbar = ({auth: {loading, isAuthenticated}, logout}) => {
 
 	return (
 
-    <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav className="navbar navbar-expand-md bg-light navbar-light">
             <a className="navbar-brand" href="/">Article</a>
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

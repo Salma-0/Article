@@ -12,6 +12,7 @@ const multiparty = require('connect-multiparty');
 const multipartMiddleware = multiparty({uploadDir: __dirname +'/images'});
 const fs = require('fs');
 const path = require('path');
+const paginate = require('jw-paginate');
 
 const uploadDirectory = '/Users/mac/Projects/ReactApps/Article/routes/api/images';
 
@@ -121,13 +122,20 @@ router.get('/:id', async (req, res)=>{
 //@access Public
 router.get('/', async (req, res)=>{
 	try{
+		const page = parseInt(req.query.page) || 1;
 		const articles = await Article.find().select('title date').sort({date: -1}).populate('author', ['name', 'avatar']);
-
 		if(!articles){
 			return res.status(404).json({errors: [{msg: 'Articles Not Found'}]});
 		}
+        
+        const pageSize = 5;
+	    const pager = paginate(articles.length, page, pageSize);
 
-		res.json(articles);
+	    //get page of articles
+	    const pageOfItems = articles.slice(pager.startIndex, pager.endIndex + 1);
+
+		res.json({pager, pageOfItems});
+		
 	} catch(err){
 		res.status(500).send(err.message);
 	}

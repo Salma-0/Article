@@ -7,6 +7,22 @@
   font-family: 'Amiri';
 }
 
+.jumbotron{
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./components/layout/knowledge.jpg');
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./components/layout/knowledge.jpg');
+  background-size: cover;
+    background-position: center;
+    height: 60%;
+
+
+}
+
+.jumbotron h1, p{
+  color: white;
+  font-family: 'Coming Soon';
+  margin-bottom: 2%;
+}
+
 
 /*
  *  Navbar Styles

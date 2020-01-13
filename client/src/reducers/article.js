@@ -19,7 +19,8 @@ const initialState = {
 	article: null,
 	articles: [],
 	loading: true,
-	errors: {}
+	errors: {},
+	pager: {}
 }
 
 export default function(state = initialState, action){
@@ -31,8 +32,9 @@ export default function(state = initialState, action){
 		case GET_ARTICLES:
 		return {
 			...state,
-			articles: payload,
-			loading: false
+			articles: payload.pageOfItems,
+			loading: false,
+			pager: payload.pager
 		};
 
 		case GET_ARTICLE:

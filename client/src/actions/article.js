@@ -90,14 +90,16 @@ export const getArticlesByAuthor = (id = '') => async dispatch =>{
 
 //get all of articles
 
-export const getArticles = () => async dispatch =>{
+export const getArticles = page => async dispatch =>{
 	try{
-		const res = await axios.get('/api/articles');
+		console.log('page:',page)
 
-		dispatch({
-			type: GET_ARTICLES,
-			payload: res.data
-		});
+		const res = await axios.get(`/api/articles?page=${page}`);
+
+		 dispatch({
+	     	type: GET_ARTICLES,
+		 	payload: res.data
+		 });
 		
 	} catch(err){
 		

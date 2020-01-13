@@ -39,12 +39,14 @@ const App = () =>{
    <Navbar/>
    <section>
    <Alert />
+   <Switch>
    <Route exact path= '/' component={Articles}/>
    <Route exact path= '/articles/:id' component={Article}/>
    <Route exact path='/register' component={Register}/>
    <Route exact path='/login' component={Login}/>
    <Route exac path='/profile' component={Profile}/>
    <PrivateRoute exac path='/editor' component={Editor}/>
+   </Switch>
    </section>
    </Router>
    </Provider>
